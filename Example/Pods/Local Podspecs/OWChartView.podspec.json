@@ -1,15 +1,15 @@
 {
   "name": "OWChartView",
   "version": "0.1.0",
-  "summary": "A short description of OWChartView.",
-  "description": "TODO: Add long description of the pod here.",
+  "summary": "A Easy to use chart control of OWChartView.",
+  "description": "TODO: Easy to use chart control.",
   "homepage": "https://github.com/OneWang/OWChartView",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "OneWang": "wangqingfei@exinlei.com"
+    "OneWang": "jackwangqingfei@gmail.com"
   },
   "source": {
     "git": "https://github.com/OneWang/OWChartView.git",
@@ -18,5 +18,9 @@
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "OWChartView/Classes/**/*"
+  "source_files": "OWChartView/**/*",
+  "frameworks": [
+    "UIKit",
+    "Foundation"
+  ]
 }

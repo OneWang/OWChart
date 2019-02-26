@@ -37,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		04ECA85A222581C700D81402 /* OWMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OWMacro.h; sourceTree = "<group>"; };
 		1B548B911689F42D4FC77B96 /* Pods-OWChartView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OWChartView_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-OWChartView_Example/Pods-OWChartView_Example.release.xcconfig"; sourceTree = "<group>"; };
 		27D91CAA161EE3F3D3275FBD /* OWChartView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = OWChartView.podspec; path = ../OWChartView.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		53FA560C83E862A9FF61E038 /* Pods_OWChartView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OWChartView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -143,6 +144,7 @@
 		6003F593195388D20070C39A /* Example for OWChartView */ = {
 			isa = PBXGroup;
 			children = (
+				04ECA85A222581C700D81402 /* OWMacro.h */,
 				6003F59C195388D20070C39A /* OWAppDelegate.h */,
 				6003F59D195388D20070C39A /* OWAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
@@ -207,7 +209,7 @@
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				3E29E15DCF1FF183FA67D6A1 /* [CP] Embed Pods Frameworks */,
+				667C21727AA8C56A30E41765 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -312,7 +314,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		3E29E15DCF1FF183FA67D6A1 /* [CP] Embed Pods Frameworks */ = {
+		667C21727AA8C56A30E41765 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (

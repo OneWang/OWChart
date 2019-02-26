@@ -7,16 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0B99AE4FD7C37938CC50DF3B80F84DEF /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = F724CF40227D70FAB6D021F7523BF05E /* ReplaceMe.m */; };
-		0CE1B3689995008255E4EC327F8CD95A /* OWChartView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E01874CC8C66F5385C6156788F859450 /* OWChartView-dummy.m */; };
-		14CBE72F546AF0FED9F088E30960E1CA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		02E13CE55D7C9C18AE94729EFED09DEB /* UIView+WFExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = EEA13DE8DDEE843668DD23F0FA83CEF1 /* UIView+WFExtension.m */; };
+		05D5D25AD7F0B188006D65B7C493FF6E /* WFChartModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 7DCC09FC488502AFB8B5BCBD7D2586E5 /* WFChartModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F34722604F4BD4471A3D02B5CCA3EF9 /* WFPieChartItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CB2D4ED6A026535E34A99ED3CE2F5B8 /* WFPieChartItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		14CBE72F546AF0FED9F088E30960E1CA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		16A3109D7AE0B89220D4FD7402148BD7 /* WFPieChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = A28ADAC4D17A53E12489BFAAF8E7DAA0 /* WFPieChartView.m */; };
+		355756CEA4D0262A9E988CFDC5EE01CD /* OWChartView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9BF1B1BC55959A8A1B75C27188EB0437 /* OWChartView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5CEE0072ADC1C6F7C31DBE2DC2C2AD66 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
 		5E6D6C2B01F25E940506135AE8C8BF00 /* Pods-OWChartView_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 070B7B2164A0FD168FA97F157A5DF781 /* Pods-OWChartView_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		70E5422E0F0D867DB55AF43C858DFD29 /* OWChartView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 823305C6DC2D6D83085761FF923B281B /* OWChartView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		71A58DE9B426BA1E8D38461A15A6EB49 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */; };
 		71EB7928A33FD27F43E70FE52CE64993 /* Pods-OWChartView_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 409E2E2333C8F0F365AAA63B3E5FBAB2 /* Pods-OWChartView_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7E33432771F5D9C50CBD1D1C7DC6AB7B /* WFPieChartItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DC5D203F88E4F8D5B05E3B09AFB574C /* WFPieChartItem.m */; };
 		8F267A5755F4208693A73517DEB6BBCE /* Pods-OWChartView_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C42E7749382D2DC854535415DA57857F /* Pods-OWChartView_Example-dummy.m */; };
-		94689DF86FAB088E246A17CE7CFC2D10 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		94689DF86FAB088E246A17CE7CFC2D10 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		9B4559525968BE777EF7B5565E2EE682 /* WFPieChartView.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E6384F1B25F3421F9432B81CE2BB4F2 /* WFPieChartView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A9CB62C1F6AFC32B2C4EA09C3BC2D3A2 /* OWChartView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C63D3B2249EAF50332BDDD4E5B26513 /* OWChartView-dummy.m */; };
+		B1810312472B1CA1CE7C711922B2BF79 /* WFChartModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6645AF3C9E6444239E9076C97DF359 /* WFChartModel.m */; };
+		BD7CEFB80D131E083A9B610A99F99128 /* WFLineChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 10B947922DDB1F64FAA8BC87DC42FCBA /* WFLineChartView.m */; };
+		C01CD504CFED01D11028827FCA30E060 /* UIView+WFExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 49914CC3CD94447D390872C35EFF8E37 /* UIView+WFExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E72DCE352804D2873789E05ADE534622 /* Pods-OWChartView_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F94AEB36135C4BECE12F8AD0FBF634F9 /* Pods-OWChartView_Tests-dummy.m */; };
-		E8A5E5C204E35D08EF6EC5AE6C31662A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		F9068C9286D93258445B89B14E16AA91 /* WFLineChartView.h in Headers */ = {isa = PBXBuildFile; fileRef = 3276A8519B88431A50660A236A401393 /* WFLineChartView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,63 +41,74 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = B01946DB441490148FEA04FAF37748B6;
+			remoteGlobalIDString = 34D2FB69ED67231D69E1203CA3C076C7;
 			remoteInfo = OWChartView;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0014D000FD8456A0D48DFD8A7F4B4060 /* OWChartView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = OWChartView.framework; path = OWChartView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		0298AA1B1B59CDC9EDB4691A534257C0 /* OWChartView.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = OWChartView.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		070B7B2164A0FD168FA97F157A5DF781 /* Pods-OWChartView_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-OWChartView_Tests-umbrella.h"; sourceTree = "<group>"; };
 		08E3931CDA19DFFB28A8E67DAC37FF0B /* Pods_OWChartView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_OWChartView_Example.framework; path = "Pods-OWChartView_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BF843FB35A21D6402DDDEDCC47E4AAF /* Pods-OWChartView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OWChartView_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		0DC5D203F88E4F8D5B05E3B09AFB574C /* WFPieChartItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = WFPieChartItem.m; sourceTree = "<group>"; };
+		10B947922DDB1F64FAA8BC87DC42FCBA /* WFLineChartView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = WFLineChartView.m; sourceTree = "<group>"; };
 		1B4288DA427EE1336BB9ABE53986B6EE /* Pods-OWChartView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OWChartView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		1CB2D4ED6A026535E34A99ED3CE2F5B8 /* WFPieChartItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WFPieChartItem.h; sourceTree = "<group>"; };
 		1CDB2C8DFFC7876674E0D8B399868FAE /* Pods-OWChartView_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-OWChartView_Example-resources.sh"; sourceTree = "<group>"; };
+		2420347BA2D37688AD6A386D434F2B6D /* OWChartView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = OWChartView.modulemap; sourceTree = "<group>"; };
+		27176DA4E9B4C62D6361E6201A2AC751 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2CC8EA885A15A0787068C9A7C8FC06C3 /* Pods-OWChartView_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-OWChartView_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		3276A8519B88431A50660A236A401393 /* WFLineChartView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WFLineChartView.h; sourceTree = "<group>"; };
+		3C63D3B2249EAF50332BDDD4E5B26513 /* OWChartView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "OWChartView-dummy.m"; sourceTree = "<group>"; };
 		409E2E2333C8F0F365AAA63B3E5FBAB2 /* Pods-OWChartView_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-OWChartView_Example-umbrella.h"; sourceTree = "<group>"; };
+		49914CC3CD94447D390872C35EFF8E37 /* UIView+WFExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIView+WFExtension.h"; sourceTree = "<group>"; };
+		585E7F9A46FED57308BEC0528EFCB645 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		5B2176F9009794662B936DD16429DAB7 /* Pods-OWChartView_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-OWChartView_Tests-resources.sh"; sourceTree = "<group>"; };
 		5D616DDEE0DB71110EC494DE04693F84 /* Pods-OWChartView_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-OWChartView_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		5DB10345C3766CF9818560EF4B909196 /* Pods-OWChartView_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-OWChartView_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		5E6384F1B25F3421F9432B81CE2BB4F2 /* WFPieChartView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WFPieChartView.h; sourceTree = "<group>"; };
 		5F1C10CA7A498EA50BB9A53DA7AA0073 /* Pods-OWChartView_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-OWChartView_Example.modulemap"; sourceTree = "<group>"; };
-		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		7CAB607E3F426FC02FDCBEE8A81E52C3 /* Pods-OWChartView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OWChartView_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		823305C6DC2D6D83085761FF923B281B /* OWChartView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OWChartView-umbrella.h"; sourceTree = "<group>"; };
-		8E8F1EA4F66F7C486A8D6F781ADAFC96 /* OWChartView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = OWChartView.modulemap; sourceTree = "<group>"; };
-		9013691F576F3FA0E9EF94CBC6F88757 /* OWChartView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OWChartView-prefix.pch"; sourceTree = "<group>"; };
-		929D399E57C3E61CAA73F845487E0827 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		7DCC09FC488502AFB8B5BCBD7D2586E5 /* WFChartModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WFChartModel.h; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9BF1B1BC55959A8A1B75C27188EB0437 /* OWChartView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OWChartView-umbrella.h"; sourceTree = "<group>"; };
+		A28ADAC4D17A53E12489BFAAF8E7DAA0 /* WFPieChartView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = WFPieChartView.m; sourceTree = "<group>"; };
 		A2BB9A267319ADEEBBEC0A79ADFD5FB5 /* Pods-OWChartView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OWChartView_Example.release.xcconfig"; sourceTree = "<group>"; };
+		A36272783A832DDF5220995EAFDFF705 /* OWChartView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OWChartView-prefix.pch"; sourceTree = "<group>"; };
+		A717D43151CECD97B4404D15DC93C6C1 /* OWChartView.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = OWChartView.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A947DAA9AD885E52237E9D2A2D6C23A0 /* Pods_OWChartView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_OWChartView_Tests.framework; path = "Pods-OWChartView_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B617D329D52F8EABF6669331D723E5AF /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		BD10190DF94B774394C8F13361AA349F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		C1DF17323CAEB9F76358FA8F9BC37D32 /* Pods-OWChartView_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OWChartView_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		C42E7749382D2DC854535415DA57857F /* Pods-OWChartView_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-OWChartView_Example-dummy.m"; sourceTree = "<group>"; };
-		C71B64731556CA359C40F4E5FDD348F8 /* OWChartView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = OWChartView.xcconfig; sourceTree = "<group>"; };
-		E01874CC8C66F5385C6156788F859450 /* OWChartView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "OWChartView-dummy.m"; sourceTree = "<group>"; };
+		C94F054EF243553C6C6F9E941C33E18A /* OWChartView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = OWChartView.xcconfig; sourceTree = "<group>"; };
+		D00ECF6EB4472B4E66A9C887B1271C9D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		E1D64866EA2E2D38550C0FCD8E13CBEF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E576179861904B9911E3A250C81DF0B5 /* Pods-OWChartView_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-OWChartView_Tests.modulemap"; sourceTree = "<group>"; };
+		EC6645AF3C9E6444239E9076C97DF359 /* WFChartModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = WFChartModel.m; sourceTree = "<group>"; };
 		EDC7D57E47BA78773511AB86B4BAB6F6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EEA13DE8DDEE843668DD23F0FA83CEF1 /* UIView+WFExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIView+WFExtension.m"; sourceTree = "<group>"; };
 		F4C2C103C2C1D850344623742001D0D1 /* Pods-OWChartView_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OWChartView_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		F724CF40227D70FAB6D021F7523BF05E /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReplaceMe.m; path = OWChartView/Classes/ReplaceMe.m; sourceTree = "<group>"; };
 		F94AEB36135C4BECE12F8AD0FBF634F9 /* Pods-OWChartView_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-OWChartView_Tests-dummy.m"; sourceTree = "<group>"; };
 		FBF4C0C1FD0F1568235FF626A39E874D /* Pods-OWChartView_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-OWChartView_Example-frameworks.sh"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		2EE6D6596F1D8D5660EA7EB6D042F918 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CEE0072ADC1C6F7C31DBE2DC2C2AD66 /* Foundation.framework in Frameworks */,
+				71A58DE9B426BA1E8D38461A15A6EB49 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		419DE421343D0F776244D7868B2A69D1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				94689DF86FAB088E246A17CE7CFC2D10 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		77B9F7B43BC518126E62A8FF6207DE14 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E8A5E5C204E35D08EF6EC5AE6C31662A /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,12 +123,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		37E167F664F561C423E52C6694529D51 /* Development Pods */ = {
+		0297520E055067B9E39DF47C9D422EFD /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				FF3F7BA9568F8965372C35D61E8748FC /* OWChartView */,
+				D00ECF6EB4472B4E66A9C887B1271C9D /* LICENSE */,
+				A717D43151CECD97B4404D15DC93C6C1 /* OWChartView.podspec */,
+				585E7F9A46FED57308BEC0528EFCB645 /* README.md */,
 			);
-			name = "Development Pods";
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		0552F5210828C901B8FFD21DE09C3058 /* OWModel */ = {
+			isa = PBXGroup;
+			children = (
+				7DCC09FC488502AFB8B5BCBD7D2586E5 /* WFChartModel.h */,
+				EC6645AF3C9E6444239E9076C97DF359 /* WFChartModel.m */,
+				1CB2D4ED6A026535E34A99ED3CE2F5B8 /* WFPieChartItem.h */,
+				0DC5D203F88E4F8D5B05E3B09AFB574C /* WFPieChartItem.m */,
+			);
+			name = OWModel;
+			path = OWChartView/OWChartView/OWModel;
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				438B396F6B4147076630CAEFE34282C1 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		438B396F6B4147076630CAEFE34282C1 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */,
+				B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */,
+			);
+			name = iOS;
 			sourceTree = "<group>";
 		};
 		5B42E155F6CC2949DDA90FD5A9D0230E /* Pods-OWChartView_Tests */ = {
@@ -128,16 +180,6 @@
 			path = "Target Support Files/Pods-OWChartView_Tests";
 			sourceTree = "<group>";
 		};
-		5F5206B12AE7D696E87256629A4E7D05 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				B617D329D52F8EABF6669331D723E5AF /* LICENSE */,
-				0298AA1B1B59CDC9EDB4691A534257C0 /* OWChartView.podspec */,
-				929D399E57C3E61CAA73F845487E0827 /* README.md */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
 		66F76CE6F748AABF6125F1479FBEFE58 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -148,12 +190,34 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		67303A03818910785097F946252A6700 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				27176DA4E9B4C62D6361E6201A2AC751 /* Info.plist */,
+				2420347BA2D37688AD6A386D434F2B6D /* OWChartView.modulemap */,
+				C94F054EF243553C6C6F9E941C33E18A /* OWChartView.xcconfig */,
+				3C63D3B2249EAF50332BDDD4E5B26513 /* OWChartView-dummy.m */,
+				A36272783A832DDF5220995EAFDFF705 /* OWChartView-prefix.pch */,
+				9BF1B1BC55959A8A1B75C27188EB0437 /* OWChartView-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/OWChartView";
+			sourceTree = "<group>";
+		};
+		6EDAB738BEC457588E065F4BA54C4FF3 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AC0F9908A29B052D57E1B870045CDA5F /* OWChartView */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				37E167F664F561C423E52C6694529D51 /* Development Pods */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				6EDAB738BEC457588E065F4BA54C4FF3 /* Development Pods */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
 				66F76CE6F748AABF6125F1479FBEFE58 /* Products */,
 				8EC374E457F7389F02D4CC0D3B4E9668 /* Targets Support Files */,
 			);
@@ -186,45 +250,39 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+		AC0F9908A29B052D57E1B870045CDA5F /* OWChartView */ = {
 			isa = PBXGroup;
 			children = (
-				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		CB24BF4CB6F491BF80866968DB7CAF23 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				BD10190DF94B774394C8F13361AA349F /* Info.plist */,
-				8E8F1EA4F66F7C486A8D6F781ADAFC96 /* OWChartView.modulemap */,
-				C71B64731556CA359C40F4E5FDD348F8 /* OWChartView.xcconfig */,
-				E01874CC8C66F5385C6156788F859450 /* OWChartView-dummy.m */,
-				9013691F576F3FA0E9EF94CBC6F88757 /* OWChartView-prefix.pch */,
-				823305C6DC2D6D83085761FF923B281B /* OWChartView-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/OWChartView";
-			sourceTree = "<group>";
-		};
-		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		FF3F7BA9568F8965372C35D61E8748FC /* OWChartView */ = {
-			isa = PBXGroup;
-			children = (
-				F724CF40227D70FAB6D021F7523BF05E /* ReplaceMe.m */,
-				5F5206B12AE7D696E87256629A4E7D05 /* Pod */,
-				CB24BF4CB6F491BF80866968DB7CAF23 /* Support Files */,
+				D40BF279727C05565314DFC490C97D12 /* Category */,
+				0552F5210828C901B8FFD21DE09C3058 /* OWModel */,
+				E4A407A216ACEB7200B7DCA864A0B439 /* OWView */,
+				0297520E055067B9E39DF47C9D422EFD /* Pod */,
+				67303A03818910785097F946252A6700 /* Support Files */,
 			);
 			name = OWChartView;
 			path = ../..;
+			sourceTree = "<group>";
+		};
+		D40BF279727C05565314DFC490C97D12 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				49914CC3CD94447D390872C35EFF8E37 /* UIView+WFExtension.h */,
+				EEA13DE8DDEE843668DD23F0FA83CEF1 /* UIView+WFExtension.m */,
+			);
+			name = Category;
+			path = OWChartView/OWChartView/Category;
+			sourceTree = "<group>";
+		};
+		E4A407A216ACEB7200B7DCA864A0B439 /* OWView */ = {
+			isa = PBXGroup;
+			children = (
+				3276A8519B88431A50660A236A401393 /* WFLineChartView.h */,
+				10B947922DDB1F64FAA8BC87DC42FCBA /* WFLineChartView.m */,
+				5E6384F1B25F3421F9432B81CE2BB4F2 /* WFPieChartView.h */,
+				A28ADAC4D17A53E12489BFAAF8E7DAA0 /* WFPieChartView.m */,
+			);
+			name = OWView;
+			path = OWChartView/OWChartView/OWView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,17 +304,39 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CE468EE11C97FF7B7E899EC73430E54F /* Headers */ = {
+		D3959C582E53E456BDB0DE98C8C5CC52 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				70E5422E0F0D867DB55AF43C858DFD29 /* OWChartView-umbrella.h in Headers */,
+				355756CEA4D0262A9E988CFDC5EE01CD /* OWChartView-umbrella.h in Headers */,
+				C01CD504CFED01D11028827FCA30E060 /* UIView+WFExtension.h in Headers */,
+				05D5D25AD7F0B188006D65B7C493FF6E /* WFChartModel.h in Headers */,
+				F9068C9286D93258445B89B14E16AA91 /* WFLineChartView.h in Headers */,
+				0F34722604F4BD4471A3D02B5CCA3EF9 /* WFPieChartItem.h in Headers */,
+				9B4559525968BE777EF7B5565E2EE682 /* WFPieChartView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		34D2FB69ED67231D69E1203CA3C076C7 /* OWChartView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CCEE4E7F3BB6EBA35AB6AF9448C5A89C /* Build configuration list for PBXNativeTarget "OWChartView" */;
+			buildPhases = (
+				62AB806DA415170D41C06EB895D60D1E /* Sources */,
+				2EE6D6596F1D8D5660EA7EB6D042F918 /* Frameworks */,
+				D3959C582E53E456BDB0DE98C8C5CC52 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OWChartView;
+			productName = OWChartView;
+			productReference = 0014D000FD8456A0D48DFD8A7F4B4060 /* OWChartView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		8380206D7466AA2BC82DEFAD76F1E101 /* Pods-OWChartView_Tests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = CB2F78488D03DEDBF5931D9FBA82DECE /* Build configuration list for PBXNativeTarget "Pods-OWChartView_Tests" */;
@@ -293,23 +373,6 @@
 			productReference = 08E3931CDA19DFFB28A8E67DAC37FF0B /* Pods_OWChartView_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		B01946DB441490148FEA04FAF37748B6 /* OWChartView */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F2DEC6EEE012D43AFDE63EBAB367E850 /* Build configuration list for PBXNativeTarget "OWChartView" */;
-			buildPhases = (
-				4E824A0FB01F6DDA1AB83BB17457EC5A /* Sources */,
-				77B9F7B43BC518126E62A8FF6207DE14 /* Frameworks */,
-				CE468EE11C97FF7B7E899EC73430E54F /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = OWChartView;
-			productName = OWChartView;
-			productReference = 0014D000FD8456A0D48DFD8A7F4B4060 /* OWChartView.framework */;
-			productType = "com.apple.product-type.framework";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -331,7 +394,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B01946DB441490148FEA04FAF37748B6 /* OWChartView */,
+				34D2FB69ED67231D69E1203CA3C076C7 /* OWChartView */,
 				A52D14408286FF7C13DA519AE6E5C435 /* Pods-OWChartView_Example */,
 				8380206D7466AA2BC82DEFAD76F1E101 /* Pods-OWChartView_Tests */,
 			);
@@ -347,12 +410,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4E824A0FB01F6DDA1AB83BB17457EC5A /* Sources */ = {
+		62AB806DA415170D41C06EB895D60D1E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0CE1B3689995008255E4EC327F8CD95A /* OWChartView-dummy.m in Sources */,
-				0B99AE4FD7C37938CC50DF3B80F84DEF /* ReplaceMe.m in Sources */,
+				A9CB62C1F6AFC32B2C4EA09C3BC2D3A2 /* OWChartView-dummy.m in Sources */,
+				02E13CE55D7C9C18AE94729EFED09DEB /* UIView+WFExtension.m in Sources */,
+				B1810312472B1CA1CE7C711922B2BF79 /* WFChartModel.m in Sources */,
+				BD7CEFB80D131E083A9B610A99F99128 /* WFLineChartView.m in Sources */,
+				7E33432771F5D9C50CBD1D1C7DC6AB7B /* WFPieChartItem.m in Sources */,
+				16A3109D7AE0B89220D4FD7402148BD7 /* WFPieChartView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,7 +437,7 @@
 		2DD17212BB2F18000F0E45499D184D34 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = OWChartView;
-			target = B01946DB441490148FEA04FAF37748B6 /* OWChartView */;
+			target = 34D2FB69ED67231D69E1203CA3C076C7 /* OWChartView */;
 			targetProxy = 9D553D43C7179D22A1CDDFAD68A7FB9E /* PBXContainerItemProxy */;
 		};
 		3A9357D52B90735BCD05E48528CE98AF /* PBXTargetDependency */ = {
@@ -382,37 +449,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		163A4E8B9D8BF6F95E22C96A76299530 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C71B64731556CA359C40F4E5FDD348F8 /* OWChartView.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/OWChartView/OWChartView-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/OWChartView/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/OWChartView/OWChartView.modulemap";
-				PRODUCT_MODULE_NAME = OWChartView;
-				PRODUCT_NAME = OWChartView;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		1EE19F5DD95931924296F637BF18BD8F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -510,9 +546,9 @@
 			};
 			name = Release;
 		};
-		3E6818434CC0A6542B6F87700573C59B /* Debug */ = {
+		548002C056C7D1355EBF9439FB440374 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C71B64731556CA359C40F4E5FDD348F8 /* OWChartView.xcconfig */;
+			baseConfigurationReference = C94F054EF243553C6C6F9E941C33E18A /* OWChartView.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -539,6 +575,37 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
+		};
+		609D750005B87DA8B4A4BAB1F6E6F9E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C94F054EF243553C6C6F9E941C33E18A /* OWChartView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/OWChartView/OWChartView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/OWChartView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/OWChartView/OWChartView.modulemap";
+				PRODUCT_MODULE_NAME = OWChartView;
+				PRODUCT_NAME = OWChartView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 		7F02F835BA28DD219518B2AF1F817CEB /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -728,11 +795,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F2DEC6EEE012D43AFDE63EBAB367E850 /* Build configuration list for PBXNativeTarget "OWChartView" */ = {
+		CCEE4E7F3BB6EBA35AB6AF9448C5A89C /* Build configuration list for PBXNativeTarget "OWChartView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3E6818434CC0A6542B6F87700573C59B /* Debug */,
-				163A4E8B9D8BF6F95E22C96A76299530 /* Release */,
+				548002C056C7D1355EBF9439FB440374 /* Debug */,
+				609D750005B87DA8B4A4BAB1F6E6F9E5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
