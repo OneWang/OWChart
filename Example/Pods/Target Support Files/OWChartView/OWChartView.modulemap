@@ -1,0 +1,6 @@
+framework module OWChartView {
+  umbrella header "OWChartView-umbrella.h"
+
+  export *
+  module * { export * }
+}

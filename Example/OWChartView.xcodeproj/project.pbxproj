@@ -38,7 +38,7 @@
 
 /* Begin PBXFileReference section */
 		1B548B911689F42D4FC77B96 /* Pods-OWChartView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OWChartView_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-OWChartView_Example/Pods-OWChartView_Example.release.xcconfig"; sourceTree = "<group>"; };
-		27D91CAA161EE3F3D3275FBD /* OWChartView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = OWChartView.podspec; path = ../OWChartView.podspec; sourceTree = "<group>"; };
+		27D91CAA161EE3F3D3275FBD /* OWChartView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = OWChartView.podspec; path = ../OWChartView.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		53FA560C83E862A9FF61E038 /* Pods_OWChartView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OWChartView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58A195388D20070C39A /* OWChartView_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OWChartView_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -63,8 +63,8 @@
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9645B936A1C95B2DE229343C /* Pods-OWChartView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OWChartView_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OWChartView_Example/Pods-OWChartView_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		AEA0A307F2C8DFBFE143FB17 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		D279BC8656E60D2CF95AC106 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		AEA0A307F2C8DFBFE143FB17 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		D279BC8656E60D2CF95AC106 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		E72B98F1B89AE60B4D647D1F /* Pods-OWChartView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OWChartView_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OWChartView_Tests/Pods-OWChartView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		FD7550091C027017E83743A5 /* Pods-OWChartView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OWChartView_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-OWChartView_Tests/Pods-OWChartView_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */

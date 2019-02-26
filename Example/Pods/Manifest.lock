@@ -1,0 +1,16 @@
+PODS:
+  - OWChartView (0.1.0)
+
+DEPENDENCIES:
+  - OWChartView (from `../`)
+
+EXTERNAL SOURCES:
+  OWChartView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  OWChartView: 369e64c4ce31f702965e9811ca81aa887130ccc2
+
+PODFILE CHECKSUM: d18a38b07c268b1a7de14ac326cdcb82b5e47e55
+
+COCOAPODS: 1.5.0
