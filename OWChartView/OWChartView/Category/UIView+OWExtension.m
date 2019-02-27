@@ -1,14 +1,14 @@
 //
-//  UIView+WFExtension.m
+//  UIView+OWExtension.m
 //  AnimationDemo
 //
 //  Created by Jack on 2018/4/16.
 //  Copyright © 2018年 Jack. All rights reserved.
 //
 
-#import "UIView+WFExtension.h"
+#import "UIView+OWExtension.h"
 
-@implementation UIView (WFExtension)
+@implementation UIView (OWExtension)
 - (CGFloat)left {
     return self.frame.origin.x;
 }

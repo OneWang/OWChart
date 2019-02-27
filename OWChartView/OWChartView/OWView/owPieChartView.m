@@ -1,15 +1,15 @@
 //
-//  WFPieChartView.m
+//  OWPieChartView.m
 //  AnimationDemo
 //
 //  Created by Jack on 2018/4/13.
 //  Copyright © 2018年 Jack. All rights reserved.
 //
 
-#import "WFPieChartView.h"
-#import "WFPieChartItem.h"
+#import "OWPieChartItem.h"
+#import "OWPieChartView.h"
 
-@interface WFPieChartView ()
+@interface OWPieChartView ()
 /** 转换后的数据源数组 */
 @property (strong, nonatomic) NSMutableArray *percentageArray;
 /** 遮罩动画层 */
@@ -20,10 +20,10 @@
 @property (assign, nonatomic) CGFloat realWidth;
 @end
 
-@implementation WFPieChartView
+@implementation OWPieChartView
 
 //MARK:初始化方法
-- (instancetype)initWithFrame:(CGRect)frame items:(NSArray<WFPieChartItem *> *)items radius:(CGFloat)radius{
+- (instancetype)initWithFrame:(CGRect)frame items:(NSArray<OWPieChartItem *> *)items radius:(CGFloat)radius{
     if (self = [super initWithFrame:frame]) {
         self.radius = radius;
         self.itemArray = items;
@@ -46,7 +46,7 @@
     [self p_strokePineChart];
 }
 
-- (void)setItemArray:(NSArray<WFPieChartItem *> *)itemArray{
+- (void)setItemArray:(NSArray<OWPieChartItem *> *)itemArray{
     _itemArray = itemArray;
     [self.layer.sublayers makeObjectsPerformSelector:@selector(removeFromSuperlayer)];
     self.realWidth = _borderWidth * 2;
@@ -69,12 +69,12 @@
 }
 
 //MARK:转换数据
-- (NSArray *)p_convertDataArray:(NSArray<WFPieChartItem *> *)dataArray{
+- (NSArray *)p_convertDataArray:(NSArray<OWPieChartItem *> *)dataArray{
     //计算数组中progress的和
     CGFloat totalCount = [[dataArray valueForKeyPath:@"@sum.progress"] floatValue];
     __weak typeof(self) weakSelf = self;
     __block CGFloat total = 0;
-    [dataArray enumerateObjectsUsingBlock:^(WFPieChartItem * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+    [dataArray enumerateObjectsUsingBlock:^(OWPieChartItem * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         if (totalCount == 0) {
             [weakSelf.percentageArray addObject:@(1.0 / weakSelf.itemArray.count * (idx + 1))];
         }else{
@@ -90,7 +90,7 @@
     self.piePace = _itemArray.count < 3 ? 0 : _piePace;
     NSArray *dataArray = [self p_convertDataArray:_itemArray];
     for (int i = 0; i < _itemArray.count; i ++) {
-        WFPieChartItem *item = _itemArray[i];
+        OWPieChartItem *item = _itemArray[i];
         CGFloat start = 0.f;
         if (i != 0) {
             start = [dataArray[i - 1] floatValue];
@@ -144,7 +144,7 @@
 
 - (UILabel *)p_createCircleDescriptionLabelWithIndex:(NSInteger)index start:(CGFloat)start end:(CGFloat)end{
     UILabel *descriptionLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
-    WFPieChartItem *item = _itemArray[index];
+    OWPieChartItem *item = _itemArray[index];
     descriptionLabel.text = [NSString stringWithFormat:@"%.0f%%\n%@",(end - start) * 100,item.title];
     //获取中间点的角度
     CGFloat angle = (start + end) * 0.5 * M_PI * 2;
@@ -185,7 +185,7 @@
     CGPoint touchPoint = [touch locationInView:touch.view];
     CGPoint center = CGPointMake(self.frame.size.width * 0.5, self.frame.size.height * 0.5);
     //距离中心点的距离
-    CGFloat distanceFromCenter = sqrtf(pow(touchPoint.x - center.x, 2.f) + powf(touchPoint.y - center.y, 2.f));
+    CGFloat distanceFromCenter = sqrtf(pow(touchPoint.x - center.x, 2.f) + pow(touchPoint.y - center.y, 2.f));
     if (distanceFromCenter < _radius - _realWidth * 0.5 || distanceFromCenter > _radius) {
         return;
     }
@@ -195,8 +195,8 @@
     while (percentage > [_percentageArray[index] floatValue]) {
         index ++;
     }
-    if (self.delegate && [self.delegate respondsToSelector:@selector(wf_pieChartView:didClickIndex:)]) {
-        [self.delegate wf_pieChartView:self didClickIndex:index];
+    if (self.delegate && [self.delegate respondsToSelector:@selector(OW_pieChartView:didClickIndex:)]) {
+        [self.delegate OW_pieChartView:self didClickIndex:index];
     }
     NSLog(@"索引值：%ld",(long)index);
 }

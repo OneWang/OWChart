@@ -7,17 +7,17 @@
 //
 
 #import "OWViewController.h"
-#import "WFLineChartView.h"
-#import "WFChartModel.h"
+#import "OWLineChartView.h"
+#import "OWChartModel.h"
 #import "OWMacro.h"
 
 @interface OWViewController ()
 /** contentView */
 @property (nonatomic, weak) UIScrollView *contentView;
 /** 折线图 */
-@property (nonatomic, weak) WFLineChartView *lineView;
+@property (nonatomic, weak) OWLineChartView *lineView;
 /** 柱状图 */
-@property (nonatomic, weak) WFLineChartView *barView;
+@property (nonatomic, weak) OWLineChartView *barView;
 @end
 
 @implementation OWViewController
@@ -61,17 +61,17 @@
     tiplabel3.frame = CGRectMake(switchDash.frame.size.width, 50, 140, 40);
     tiplabel3.textAlignment = NSTextAlignmentCenter;
     
-    WFLineChartView *lineView = [[WFLineChartView alloc] initWithFrame:CGRectMake(0, 100, K_Screen_Width, 300) xTitleArray:@[@"1",@"2",@"3",@"4",@"5",@"6",@"7",@"8",@"9",@"10",@"11",@"12"]];
+    OWLineChartView *lineView = [[OWLineChartView alloc] initWithFrame:CGRectMake(0, 100, K_Screen_Width, 300) xTitleArray:@[@"1",@"2",@"3",@"4",@"5",@"6",@"7",@"8",@"9",@"10",@"11",@"12"]];
     lineView.isShowGridding = YES;
     self.lineView = lineView;
     lineView.isAnimation = YES;
-    lineView.chartType = WFChartViewTypeLine;
+    lineView.chartType = OWChartViewTypeLine;
     lineView.barWidth = 20.f;
     lineView.headerTitle = @"折线图";
     lineView.isShowInteger = YES;
     
     lineView.isDash = NO;
-    WFChartModel *model = [WFChartModel modelWithColor:RandomColor plots:[self randomArrayWithCount:12] project:@"1组"];
+    OWChartModel *model = [OWChartModel modelWithColor:RandomColor plots:[self randomArrayWithCount:12] project:@"1组"];
     NSArray *dataSource = @[model];
     [lineView showChartViewWithDataSource:dataSource];
     [contentView addSubview:lineView];
@@ -104,16 +104,16 @@
 }
 
 - (void)createCubeChart{
-    WFLineChartView *lineView = [[WFLineChartView alloc] initWithFrame:CGRectMake(0, 450, K_Screen_Width, 300) xTitleArray:@[@"1",@"2",@"3",@"4",@"5",@"6",@"7",@"8",@"9",@"10",@"11",@"12"]];
+    OWLineChartView *lineView = [[OWLineChartView alloc] initWithFrame:CGRectMake(0, 450, K_Screen_Width, 300) xTitleArray:@[@"1",@"2",@"3",@"4",@"5",@"6",@"7",@"8",@"9",@"10",@"11",@"12"]];
     lineView.isShowGridding = YES;
     lineView.isAnimation = YES;
-    lineView.chartType = WFChartViewTypeBar;
+    lineView.chartType = OWChartViewTypeBar;
     lineView.barWidth = 20.f;
     lineView.headerTitle = @"柱状图";
     lineView.isShowInteger = YES;
-    WFChartModel *model = [WFChartModel modelWithColor:RandomColor plots:[self randomArrayWithCount:12] project:@"1组"];
-    WFChartModel *model1 = [WFChartModel modelWithColor:RandomColor plots:[self randomArrayWithCount:12] project:@"2组"];
-    WFChartModel *model2 = [WFChartModel modelWithColor:RandomColor plots:[self randomArrayWithCount:12] project:@"3组"];
+    OWChartModel *model = [OWChartModel modelWithColor:RandomColor plots:[self randomArrayWithCount:12] project:@"1组"];
+    OWChartModel *model1 = [OWChartModel modelWithColor:RandomColor plots:[self randomArrayWithCount:12] project:@"2组"];
+    OWChartModel *model2 = [OWChartModel modelWithColor:RandomColor plots:[self randomArrayWithCount:12] project:@"3组"];
     NSArray *dataSource = @[model,model1,model2];
     [lineView showChartViewWithDataSource:dataSource];
     [_contentView addSubview:lineView];

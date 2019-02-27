@@ -32,6 +32,18 @@ TODO: Easy to use chart control.
 
   s.source_files = 'OWChartView/**/*'
   
+  s.subspec 'Category' do |ss|
+      ss.source_files = 'OWChartView/Category/*.{h,m}'
+  end
+  
+  s.subspec 'OWModel' do |ss|
+      ss.source_files = 'OWChartView/OWModel/*.{h,m}'
+  end
+  
+  s.subspec 'OWView' do |ss|
+      ss.source_files = 'OWChartView/OWView/*.{h,m}'
+  end
+  
   # s.resource_bundles = {
   #   'OWChartView' => ['OWChartView/Assets/*.png']
   # }

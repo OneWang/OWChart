@@ -1,5 +1,5 @@
 //
-//  WFChartModel.h
+//  OWChartModel.h
 //  AnimationDemo
 //
 //  Created by Jack on 2018/4/17.
@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-@interface WFChartModel : NSObject
+@interface OWChartModel : NSObject
 /** 颜色 */
 @property (strong, nonatomic) UIColor *color;
 /** 图标名称 */

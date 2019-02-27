@@ -1,5 +1,5 @@
 //
-//  UIView+WFExtension.h
+//  UIView+OWExtension.h
 //  AnimationDemo
 //
 //  Created by Jack on 2018/4/16.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UIView (WFExtension)
+@interface UIView (OWExtension)
 - (CGFloat)left;
 - (CGFloat)top;
 - (CGFloat)right;

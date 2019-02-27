@@ -1,5 +1,5 @@
 //
-//  WFPieChartItem.h
+//  OWPieChartItem.h
 //  AnimationDemo
 //
 //  Created by Jack on 2018/4/13.
@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-@interface WFPieChartItem : NSObject
+@interface OWPieChartItem : NSObject
 /** 标题 */
 @property (copy, nonatomic) NSString *title;
 /** 值 */

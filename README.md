@@ -5,6 +5,12 @@
 [![License](https://img.shields.io/cocoapods/l/OWChartView.svg?style=flat)](https://cocoapods.org/pods/OWChartView)
 [![Platform](https://img.shields.io/cocoapods/p/OWChartView.svg?style=flat)](https://cocoapods.org/pods/OWChartView)
 
+## Usage
+- Click to enlarge is supported
+- Dotted line of straight curve
+- Whether to display values
+- Rectangle diagram supports single and multiple
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.

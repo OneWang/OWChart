@@ -8,12 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-typedef NS_ENUM(NSInteger, WFChartViewType) {
-    WFChartViewTypeLine,
-    WFChartViewTypeBar
+typedef NS_ENUM(NSInteger, OWChartViewType) {
+    OWChartViewTypeLine,
+    OWChartViewTypeBar
 };
 
-@class WFChartModel,WFLineChartView;
+@class OWChartModel,OWLineChartView;
 @protocol WFLineChartViewDelegate <NSObject>
 @optional
 
@@ -23,10 +23,10 @@ typedef NS_ENUM(NSInteger, WFChartViewType) {
  @param lineChartView 折线图
  @param button 对应按钮
  */
-- (void)wf_lineChartView:(WFLineChartView *)lineChartView didClickButtonDot:(UIButton *)button;
+- (void)wf_lineChartView:(OWLineChartView *)lineChartView didClickButtonDot:(UIButton *)button;
 @end
 
-@interface WFLineChartView : UIView
+@interface OWLineChartView : UIView
 
 /** 代理 */
 @property (weak, nonatomic) id<WFLineChartViewDelegate> delegate;
@@ -55,7 +55,7 @@ typedef NS_ENUM(NSInteger, WFChartViewType) {
 /** bar的宽度 */
 @property (assign, nonatomic) CGFloat barWidth;
 /** 图形 */
-@property (assign, nonatomic) WFChartViewType chartType;
+@property (assign, nonatomic) OWChartViewType chartType;
 /** 是否需要是曲线 */
 @property (assign, nonatomic) BOOL isCurve;
 
@@ -73,6 +73,6 @@ typedef NS_ENUM(NSInteger, WFChartViewType) {
 
  @param dataSource 数据源数组
  */
-- (void)showChartViewWithDataSource:(NSArray<WFChartModel *> *)dataSource;
+- (void)showChartViewWithDataSource:(NSArray<OWChartModel *> *)dataSource;
 
 @end

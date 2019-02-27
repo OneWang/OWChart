@@ -1,14 +1,14 @@
 //
-//  WFLineChartView.m
+//  OWLineChartView.m
 //  AnimationDemo
 //
 //  Created by Jack on 2018/4/13.
 //  Copyright © 2018年 Jack. All rights reserved.
 //
 
-#import "WFLineChartView.h"
-#import "UIView+WFExtension.h"
-#import "WFChartModel.h"
+#import "OWLineChartView.h"
+#import "UIView+OWExtension.h"
+#import "OWChartModel.h"
 #import <math.h>
 
 /** X轴文字的大小 */
@@ -40,11 +40,11 @@ static CGFloat dataChartHeight = 0;
 /** Y轴显示的最大值 */
 static NSInteger yAxisMaxValue = 100;
 
-@interface WFLineChartView ()<UIScrollViewDelegate,CAAnimationDelegate>
+@interface OWLineChartView ()<UIScrollViewDelegate,CAAnimationDelegate>
 /** 滚动的scrollview */
 @property (strong, nonatomic) UIScrollView *scrollView;
 /** 点的数组 */
-@property (strong, nonatomic) NSArray<WFChartModel *> *dataArray;
+@property (strong, nonatomic) NSArray<OWChartModel *> *dataArray;
 /** 将所有创建的layer层保存在数组中 */
 @property (strong, nonatomic) NSMutableArray<CAShapeLayer *> *firstLayerArray;
 @property (strong, nonatomic) NSMutableArray<CAShapeLayer *> *secondLayerArray;
@@ -68,7 +68,7 @@ static NSInteger yAxisMaxValue = 100;
 @property (assign, nonatomic) CGFloat barMargin;
 @end
 
-@implementation WFLineChartView
+@implementation OWLineChartView
 
 - (instancetype)initWithFrame:(CGRect)frame xTitleArray:(NSArray *)titleArray{
     if (self = [super initWithFrame:frame]) {
@@ -93,13 +93,13 @@ static NSInteger yAxisMaxValue = 100;
 }
 
 //设置数据源源和Y轴的最大值
-- (void)showChartViewWithDataSource:(NSArray<WFChartModel *> *)dataSource {
+- (void)showChartViewWithDataSource:(NSArray<OWChartModel *> *)dataSource {
     NSAssert(dataSource.count != 0, @"数据源数组不能为空");
     //获取 Y 轴的最大值
     [self p_getYAxisMaxValue];
     
     self.dataArray = dataSource;
-    if (_chartType == WFChartViewTypeLine) {
+    if (_chartType == OWChartViewTypeLine) {
         _headerTitle = @"折线图";
     }else{
         _headerTitle = @"柱状图";
@@ -109,7 +109,7 @@ static NSInteger yAxisMaxValue = 100;
 
 - (void)p_getYAxisMaxValue{
     yAxisMaxValue = 0;
-    [_dataArray enumerateObjectsUsingBlock:^(WFChartModel * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+    [_dataArray enumerateObjectsUsingBlock:^(OWChartModel * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         [obj.plotArray enumerateObjectsUsingBlock:^(NSString * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
             if (obj.integerValue > yAxisMaxValue) {
                 yAxisMaxValue = obj.integerValue;
@@ -124,14 +124,14 @@ static NSInteger yAxisMaxValue = 100;
 
 - (void)p_showChartView{
     //截取数据，防止数组越界
-    [_dataArray enumerateObjectsUsingBlock:^(WFChartModel * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+    [_dataArray enumerateObjectsUsingBlock:^(OWChartModel * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         if (obj.plotArray.count > self.xAxisTitleArray.count) {
             obj.plotArray = [obj.plotArray subarrayWithRange:NSMakeRange(0, self.xAxisTitleArray.count)];
         }
     }];
     
     //设置柱状图的间距大于X轴中文字的间距
-    if (_chartType == WFChartViewTypeBar && _xAxisMargin < _barWidth * _dataArray.count + _barMargin) {
+    if (_chartType == OWChartViewTypeBar && _xAxisMargin < _barWidth * _dataArray.count + _barMargin) {
         self.xAxisMargin = self.orginXAxisMargin = _barWidth * _dataArray.count + _barMargin;
     }
     
@@ -144,7 +144,7 @@ static NSInteger yAxisMaxValue = 100;
     [self p_resetDataSouce];
     
     [self p_addYaxisSparator];
-    if (self.chartType == WFChartViewTypeLine) {
+    if (self.chartType == OWChartViewTypeLine) {
         [self p_addXaxisSparator];
         [self p_drawLineChartViewLine];
         [self p_drawLineChartViewPots];
@@ -210,12 +210,12 @@ static NSInteger yAxisMaxValue = 100;
     if (self.isShowValue) {
         __weak typeof(self) weakSelf = self;
         int centerFlag = _dataArray.count * 0.5;
-        [_dataArray enumerateObjectsUsingBlock:^(WFChartModel * _Nonnull model, NSUInteger idex, BOOL * _Nonnull stop) {
+        [_dataArray enumerateObjectsUsingBlock:^(OWChartModel * _Nonnull model, NSUInteger idex, BOOL * _Nonnull stop) {
             [model.plotArray enumerateObjectsUsingBlock:^(NSString * _Nonnull string, NSUInteger i, BOOL * _Nonnull stop) {
                 if (string.floatValue < 0) {
                     string = @"0";
                 }
-                if (weakSelf.chartType == WFChartViewTypeLine) {
+                if (weakSelf.chartType == OWChartViewTypeLine) {
                     CGSize size = [string sizeWithAttributes:@{NSFontAttributeName : [UIFont systemFontOfSize:10]}];
                     CATextLayer *textLayer = [self p_createTextLayerWithString:string font:10 frame:CGRectMake((i + 1) * weakSelf.xAxisMargin - size.width * 0.5, [weakSelf p_getDotArrayYxaisWithValue:string] - 5 - size.height, size.width, size.height)];
                     [weakSelf.scrollView.layer addSublayer:textLayer];
@@ -288,7 +288,7 @@ static NSInteger yAxisMaxValue = 100;
     //画轴
     UIBezierPath *path = [UIBezierPath bezierPath];
     [path moveToPoint:CGPointMake(0, _xOriginPoint.y)];
-    if (_chartType == WFChartViewTypeLine) {
+    if (_chartType == OWChartViewTypeLine) {
         xAxisMaxX = (_xAxisTitleArray.count + 0.5) * self.xAxisMargin;
     }else{
         xAxisMaxX = (_xAxisTitleArray.count + 1) * self.xAxisMargin;
@@ -324,7 +324,7 @@ static NSInteger yAxisMaxValue = 100;
         UIBezierPath *ySeparatorPath = [UIBezierPath bezierPath];
         CGFloat y = topMargin + (yAxisCount - i) * yAxisMargin;
         [ySeparatorPath moveToPoint:CGPointMake(0, y)];
-        if (_chartType == WFChartViewTypeLine) {
+        if (_chartType == OWChartViewTypeLine) {
             [ySeparatorPath addLineToPoint:CGPointMake((_xAxisTitleArray.count + 0.5) * self.xAxisMargin, y)];
         }else{
             [ySeparatorPath addLineToPoint:CGPointMake((_xAxisTitleArray.count + 1) * self.xAxisMargin, y)];
@@ -408,7 +408,7 @@ static NSInteger yAxisMaxValue = 100;
 #pragma mark ***************************** 绘制折线图上的点和线 *****************************
 - (void)p_drawLineChartViewPots{
     __weak typeof(self) weakSelf = self;
-    [_dataArray enumerateObjectsUsingBlock:^(WFChartModel * _Nonnull model, NSUInteger idx, BOOL * _Nonnull stop) {
+    [_dataArray enumerateObjectsUsingBlock:^(OWChartModel * _Nonnull model, NSUInteger idx, BOOL * _Nonnull stop) {
         [model.plotArray enumerateObjectsUsingBlock:^(NSString * _Nonnull string, NSUInteger idx, BOOL * _Nonnull stop) {
             UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
             [button addTarget:self action:@selector(p_plotClickButton:) forControlEvents:UIControlEventTouchUpInside];
@@ -433,7 +433,7 @@ static NSInteger yAxisMaxValue = 100;
 - (void)p_drawLineChartViewLine{
     __weak typeof(self) weakSelf = self;
     if (self.isFill) {
-        [_dataArray enumerateObjectsUsingBlock:^(WFChartModel * _Nonnull model, NSUInteger idx, BOOL * _Nonnull stop) {
+        [_dataArray enumerateObjectsUsingBlock:^(OWChartModel * _Nonnull model, NSUInteger idx, BOOL * _Nonnull stop) {
             __block CAShapeLayer *layer = nil;
             UIBezierPath *linePath = [UIBezierPath bezierPath];
             [linePath moveToPoint:CGPointMake(weakSelf.xAxisMargin, weakSelf.xOriginPoint.y)];
@@ -447,7 +447,7 @@ static NSInteger yAxisMaxValue = 100;
         }];
     }else{
         if (self.isCurve) {
-            [_dataArray enumerateObjectsUsingBlock:^(WFChartModel * _Nonnull model, NSUInteger idx, BOOL * _Nonnull stop) {
+            [_dataArray enumerateObjectsUsingBlock:^(OWChartModel * _Nonnull model, NSUInteger idx, BOOL * _Nonnull stop) {
                 __block CAShapeLayer *layer = nil;
                 UIBezierPath *linePath = [UIBezierPath bezierPath];
                 [linePath moveToPoint:CGPointMake(weakSelf.xAxisMargin, [weakSelf p_getDotArrayYxaisWithValue:model.plotArray.firstObject])];
@@ -469,7 +469,7 @@ static NSInteger yAxisMaxValue = 100;
                 [weakSelf.scrollView.layer addSublayer:layer];
             }];
         }else{        
-            [_dataArray enumerateObjectsUsingBlock:^(WFChartModel * _Nonnull model, NSUInteger idx, BOOL * _Nonnull stop) {
+            [_dataArray enumerateObjectsUsingBlock:^(OWChartModel * _Nonnull model, NSUInteger idx, BOOL * _Nonnull stop) {
                 __block CAShapeLayer *layer = nil;
                 UIBezierPath *linePath = [UIBezierPath bezierPath];
                 [linePath moveToPoint:CGPointMake(weakSelf.xAxisMargin, [weakSelf p_getDotArrayYxaisWithValue:model.plotArray.firstObject])];
@@ -505,7 +505,7 @@ static NSInteger yAxisMaxValue = 100;
 - (void)p_drawBarChartViewBars{
     NSInteger centerFlag = _dataArray.count * 0.5;
     __weak typeof(self) weakSelf = self;
-    [_dataArray enumerateObjectsUsingBlock:^(WFChartModel * _Nonnull model, NSUInteger idex, BOOL * _Nonnull stop) {
+    [_dataArray enumerateObjectsUsingBlock:^(OWChartModel * _Nonnull model, NSUInteger idex, BOOL * _Nonnull stop) {
         [model.plotArray enumerateObjectsUsingBlock:^(NSString * _Nonnull string, NSUInteger i, BOOL * _Nonnull stop) {
             UIBezierPath *barPath = [UIBezierPath bezierPath];
             CGFloat startPointx = 0;
@@ -577,7 +577,7 @@ static NSInteger yAxisMaxValue = 100;
     if (_xAxisMargin > 100) {
         return;
     }
-    if (self.chartType == WFChartViewTypeBar) {
+    if (self.chartType == OWChartViewTypeBar) {
         self.barWidth *= 1.5;
         self.originBarWidth = _barWidth;
     }
@@ -595,7 +595,7 @@ static NSInteger yAxisMaxValue = 100;
         }
             break;
         case UIGestureRecognizerStateChanged:{
-            if (_chartType == WFChartViewTypeBar) {
+            if (_chartType == OWChartViewTypeBar) {
                 self.barWidth = recognizer.scale * _originBarWidth;
                 if (_barWidth < 5) {
                     _barWidth = 5;
@@ -609,7 +609,7 @@ static NSInteger yAxisMaxValue = 100;
         }
             break;
         case UIGestureRecognizerStateEnded:{
-            if (_chartType == WFChartViewTypeBar) {
+            if (_chartType == OWChartViewTypeBar) {
                 self.originBarWidth = _barWidth;
             }
             self.orginXAxisMargin = _xAxisMargin;

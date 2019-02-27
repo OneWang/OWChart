@@ -10,10 +10,10 @@
 #endif
 #endif
 
-#import "UIView+WFExtension.h"
-#import "WFChartModel.h"
-#import "WFPieChartItem.h"
-#import "WFLineChartView.h"
+#import "UIView+OWExtension.h"
+#import "OWChartModel.h"
+#import "OWPieChartItem.h"
+#import "OWLineChartView.h"
 #import "WFPieChartView.h"
 
 FOUNDATION_EXPORT double OWChartViewVersionNumber;
